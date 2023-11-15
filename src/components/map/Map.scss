@@ -1,0 +1,11 @@
+.map__wrapper{
+    margin: 80px 0;
+    padding: 40px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+@media (max-width:545px){
+        #map{
+            height: 170px;
+        }
+}

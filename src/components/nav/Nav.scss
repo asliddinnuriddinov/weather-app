@@ -1,0 +1,232 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-size: 26px;
+        color: blueviolet;
+        white-space: nowrap;
+    }
+    .dark__title{
+        color: #fff;
+    }
+}
+.form{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0px 16px;
+    height: 40px;
+    border-radius: 26px;
+    width: 600px;
+    box-shadow: 0px 0px 5px #a5a5a5;
+    form{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    input{
+        border: none;
+        outline: none;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+    }
+    svg{
+        font-size: 22px;
+    }
+}
+
+.mode__toggle{
+    width: 65px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 5px #a5a5a5;
+    position: relative;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+.mode__btn__light{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    transform: translateX(100%);
+    svg{
+        fill: #fff;
+        background-color: blueviolet;
+        font-size: 28px;
+        padding: 6px;
+        border-radius: 50%;
+    }
+}
+.mode__btn__dark{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    transform: translateX(0);
+    svg{
+        fill: #fff;
+        background-color: blueviolet;
+        font-size: 28px;
+        padding: 6px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:996px){
+    .form{
+        width: 400px;
+        height: 34px;
+        input{
+            font-size: 14px;
+        }
+        svg{
+            font-size: 16px;
+        }
+    }
+    nav{
+        h1{
+            font-size: 22px;
+        }
+    }
+    .mode__toggle{
+        height: 26px;
+        width: 54px;
+    }
+    .mode__btn__light{
+        transform: translateX(110%);
+        svg{
+            font-size: 22px;
+        }
+    }
+    .mode__btn__dark{
+        svg{
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width:721px){
+    .form{
+        width: 270px;
+        input{
+            font-size: 12px;
+        }
+        svg{
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width:572px){
+    nav{
+        h1{
+            font-size: 17px;
+        }
+    }
+    .form{
+        width: 200px;
+        height: 28px;
+        input{
+            font-size: 10px;
+        }
+        svg{
+            font-size: 12px;
+        }
+    }
+    .mode__toggle{
+        height: 20px;
+        width: 50px;
+    }
+    .mode__btn__light{
+        transform: translateX(137%);
+        svg{
+            font-size: 18px;
+            padding: 4px;
+        }
+    }
+    .mode__btn__dark{
+        svg{
+            font-size: 18px;
+            padding: 4px;
+        }
+    }
+}
+@media (max-width:476px){
+    nav{
+        h1{
+            font-size: 15px;
+        }
+    }
+    .form{
+        width: 150px;
+        height: 24px;
+        input{
+            font-size: 10px;
+            background: none;
+        }
+        svg{
+            font-size: 10px;
+        }
+    }
+    .mode__toggle{
+        height: 20px;
+        width: 38px;
+    }
+    .mode__btn__light{
+        transform: translateX(80%);
+        svg{
+            font-size: 18px;
+            padding: 4px;
+        }
+    }
+    .mode__btn__dark{
+        transform: translateX(-10%);
+        svg{
+            font-size: 18px;
+            padding: 4px;
+        }
+    }
+}
+@media (max-width:366px){
+    nav{
+        h1{
+            font-size: 13px;
+        }
+    }
+    .form{
+        width: 120px;
+        height: 20px;
+        input{
+            font-size: 10px;
+            background: none;
+        }
+        svg{
+            font-size: 8px;
+            display: none;
+        }
+    }
+    .mode__toggle{
+        height: 16px;
+        width: 32px;
+    }
+    .mode__btn__light{
+        transform: translateX(80%);
+        svg{
+            font-size: 14px;
+            padding: 3px;
+        }
+    }
+    .mode__btn__dark{
+        transform: translateX(-10%);
+        svg{
+            font-size: 14px;
+            padding: 3px;
+        }
+    }
+}
